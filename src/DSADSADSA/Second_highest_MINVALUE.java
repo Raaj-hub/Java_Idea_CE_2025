@@ -3,8 +3,8 @@ package DSADSADSA;
 public class Second_highest_MINVALUE
 {
     public static void main(String[] args) {
-       // int[] arr = {12, 35, 1, 10, 34, 1};
-        int arr[]= {3,1,0,1,1};
+        int[] arr = {12, 35, 1, 10, 34, 1};
+       // int arr[]= {3,1,0,1,1};
         int first = Integer.MIN_VALUE;
         int second = Integer.MIN_VALUE;
 

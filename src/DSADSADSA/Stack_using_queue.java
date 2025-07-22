@@ -13,9 +13,10 @@ public class Stack_using_queue {
         // System.out.println(queueSize);
         queue.add(value);
         // System.out.println(queue.peek());
-        //  System.out.println(queue);
+          System.out.println(queue);
+        System.out.println(queueSize);
         for (int i = 0; i < queueSize; i++) {
-            //   System.out.println(queueSize);
+            System.out.println(queueSize);
             queue.add(queue.remove());
         }
     }
@@ -34,5 +35,6 @@ public class Stack_using_queue {
         test.pop();
         System.out.println(test.queue);
     }
+
 }
 

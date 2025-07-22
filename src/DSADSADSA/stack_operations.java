@@ -22,7 +22,7 @@ public class stack_operations
         System.out.println(st.pop());
         System.out.println(st);
         System.out.println(st.peek());
-        System.out.println(st.search(6));
+        System.out.println(st.search(8));
         System.out.println(st);
 
         System.out.println(st.isEmpty());

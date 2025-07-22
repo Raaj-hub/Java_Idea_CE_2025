@@ -20,22 +20,33 @@ public class twoSum {
         System.out.print("Enter the target:");
         int target = sc.nextInt();
         int[] nums = sumOfTwo(arr, target);
-        System.out.println(Arrays.toString(nums));
+        System.out.println("--->"+Arrays.toString(nums));
     }
 
-    private static int[] sumOfTwo(int[] num, int target) {
-        Map<Integer, Integer> map;
+    private static int[] sumOfTwo(int[] arr, int target) {
+
+        Map<Integer,Integer> map;
         map = new HashMap<>();
-        for (int i = 0; i <= num.length - 1; i++) {
-            int mid = target - num[i];
-            if (map.containsKey(mid)) {
-                 return new int[] {mid , num[i]};
-                //return new int[]{map.get(mid), i};
-            } else {
-                map.put(num[i], i);
+        for (int i=0;i<arr.length;i++)
+        {
+            int mid = target-arr[i];
+            if (map.containsKey(mid))
+            {
+                //return new int[] {mid,arr[i]};
+                return new int[] {map.get(mid), i};
+            }
+            else
+            {
+                map.put(arr[i],i);
             }
 
         }
+        System.out.println("MAP:"+map);
+
+
         return null;
     }
+
+
 }
+
