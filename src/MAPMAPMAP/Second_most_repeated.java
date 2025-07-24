@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Second_most_repeated {
     public static void main(String[] args) {
-        String s = "abbbcdd";
+        String s = "abbcccdddee";
         char cc = secondMostRepeated(s);
         System.out.println("Second moste repeated: "+cc);
     }
@@ -45,8 +45,6 @@ public class Second_most_repeated {
                 secondChar = ch;
             }
         }
-
-
         return secondChar;
     }
 }

@@ -12,18 +12,21 @@ public class Sort_by_values {
         unsortedMap.put("Orange", 5.2);
         unsortedMap.put("Banana", 7.5);
 
-        LinkedHashMap<String, Double> sortedMap = unsortedMap.entrySet()
+        unsortedMap.values().forEach(System.out::println);
+        unsortedMap.keySet().forEach(System.out::println);
+
+         Map<String, Double> sortedMap = unsortedMap.entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByValue())
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         Map.Entry::getValue,
                         (oldValue, newValue) -> oldValue,
-                        LinkedHashMap::new
+                         LinkedHashMap::new
                 ));
 
         sortedMap.forEach((key, value) -> System.out.println(key + ": " + value));
 
-
+        sortedMap.values().forEach(System.out::println);
     }
 }

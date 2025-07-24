@@ -14,13 +14,21 @@ public class SortByValues_Asce_Desc
             unsortedMap.put("banana", 1);
             unsortedMap.put("orange", 5);
             unsortedMap.put("grape", 2);
+            unsortedMap.put("mango", 4);
+            System.out.println(unsortedMap);
+            unsortedMap.values().forEach(System.out::print);
+            System.out.println();
 
             // Get a list of Map.Entry objects
             List<Map.Entry<String, Integer>> entryList = new ArrayList<>(unsortedMap.entrySet());
 
+            System.out.println("List map entry list:"+entryList);
             // Sort the list by value using comparingByValue()
             Collections.sort(entryList, Map.Entry.comparingByValue());
             //Collections.sort(entryList, Map.Entry.comparingByKey());
+
+            entryList.forEach(value -> System.out.println( ": " + value));
+            entryList.forEach(System.out::println);
 
             System.out.println("Sorted Map by Value (Ascending):");
             for (Map.Entry<String, Integer> entry : entryList) {

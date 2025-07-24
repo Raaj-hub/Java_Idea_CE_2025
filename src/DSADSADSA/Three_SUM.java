@@ -18,6 +18,7 @@ public class Three_SUM {
         List<List<Integer>> li = new ArrayList<>();
         HashSet<List<Integer>> hs = new HashSet<>();
         Arrays.sort(num);
+
         for (int i=0 ;i< num.length; i++)
         {
             int a,b;

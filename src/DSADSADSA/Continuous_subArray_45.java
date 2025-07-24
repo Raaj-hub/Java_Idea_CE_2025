@@ -37,7 +37,7 @@ public class Continuous_subArray_45
         public static void printSubarray(int[] arr, int start, int end) {
             if (start == -1 || end == -1) {
                 System.out.println("No subarray found with the given sum.");
-                //return;
+                return;
             }
 
             System.out.print("Subarray found: [");
@@ -54,7 +54,7 @@ public class Continuous_subArray_45
         {
              int[] arr = {12, 5, 31, 9, 21, 8};
             //int arr[] = {-1,0,1,2,-1,-4};
-            int target = 45;
+            int target = 17;
 
             System.out.println("Array: " + Arrays.toString(arr));
             System.out.println("Target sum: " + target);
