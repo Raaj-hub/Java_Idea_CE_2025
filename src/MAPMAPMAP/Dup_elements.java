@@ -7,7 +7,7 @@ public class Dup_elements {
     public static void main(String[] args) {
         int[] n={2,6,4,2,4,9,0,};
         char c[] = {'A', 'B', 'B', 'A', 'E'};
-        String str[] = {"raj", "amz", "raj", "pfc"};
+        String str[] = {"raj", "amz", "raj", "pfc","amz"};
 
         List<Integer> list = Arrays.stream(n).boxed().collect(Collectors.toList());
         System.out.println(list);
@@ -49,6 +49,24 @@ public class Dup_elements {
                map.put(s,map.get(s)+1);
            }
        }
+
+        map.forEach((key, value) -> System.out.println("java8->"+key + "=" + value));
+       for (Map.Entry<String, Integer> entry : map.entrySet())
+       {
+           if (entry.getValue()>1)
+           {
+               System.out.println("Dup string is: "+entry.getKey());
+               break;
+           }
+       }
+        for (Map.Entry<String, Integer> entry : map.entrySet())
+        {
+            if (entry.getValue() ==1)
+            {
+                System.out.println("Dup string is: "+entry.getKey());
+                break;
+            }
+        }
     }
 
     private static void duplicteChars(int[] n) {
