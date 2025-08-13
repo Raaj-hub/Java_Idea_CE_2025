@@ -13,7 +13,7 @@ public class Patternn {
 
         String s = bfr.readLine();
 
-        Pattern p = Pattern.compile("\\d");
+        Pattern p = Pattern.compile("\\d+");
         Matcher m = p.matcher(s);
 
         int res=0;

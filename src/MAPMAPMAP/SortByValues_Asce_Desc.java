@@ -17,6 +17,7 @@ public class SortByValues_Asce_Desc
             unsortedMap.put("mango", 4);
             System.out.println(unsortedMap);
             unsortedMap.values().forEach(System.out::print);
+            unsortedMap.keySet().forEach(System.out::println);
             System.out.println();
 
             // Get a list of Map.Entry objects
@@ -24,10 +25,10 @@ public class SortByValues_Asce_Desc
 
             System.out.println("List map entry list:"+entryList);
             // Sort the list by value using comparingByValue()
-            Collections.sort(entryList, Map.Entry.comparingByValue());
-            //Collections.sort(entryList, Map.Entry.comparingByKey());
+           // Collections.sort(entryList, Map.Entry.comparingByValue());
+            Collections.sort(entryList, Map.Entry.comparingByKey());
 
-            entryList.forEach(value -> System.out.println( ": " + value));
+            entryList.forEach(key -> System.out.println( ": " + key));
             entryList.forEach(System.out::println);
 
             System.out.println("Sorted Map by Value (Ascending):");
@@ -41,5 +42,6 @@ public class SortByValues_Asce_Desc
             for (Map.Entry<String, Integer> entry : entryList) {
                 System.out.println(entry.getKey() + " = " + entry.getValue());
             }
+            entryList.forEach(System.out::println);
         }
 }

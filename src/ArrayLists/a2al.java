@@ -1,4 +1,4 @@
-package practiceHere;
+package ArrayLists;
 
 import java.util.*;
 import java.util.stream.Collectors;

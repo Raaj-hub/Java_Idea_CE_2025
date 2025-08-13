@@ -1,17 +1,17 @@
 package ooooopsssss;
 
-public class Over_loading
-{
-         static int add(int a, int b) { return a + b; }
+public class Over_loading {
+    static int add(int a, int b) {
+        return a + b;
+    }
 
-         static int add(int a, int b, int c)
-        {
-            return a + b + c;
-        }
-        static void add(int c)
-        {
-            System.out.println(c+c);
-        }
+    static int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    void add(int c) {
+        System.out.println(c + c);
+    }
 
         // Main Function
         public static void main(String args[])
@@ -26,7 +26,11 @@ public class Over_loading
             // Calling function with 3 Parameters
             System.out.println(add(4, 6, 7));
 
-            add(4);
+            Over_loading ol = new Over_loading();
+           ol.add(4);
+
+            add(5,5);
+
         }
 
 }

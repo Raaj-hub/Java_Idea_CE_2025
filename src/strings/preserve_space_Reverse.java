@@ -2,7 +2,8 @@ package strings;
 
 public class preserve_space_Reverse {
     public static void main(String[] args) {
-        String s = "abc_de_fg";
+      //  String s = "abc_de_fg";
+        String s = "ab&c-cd";
         char[] a = s.toCharArray();
         char[] b = new char[a.length];
 

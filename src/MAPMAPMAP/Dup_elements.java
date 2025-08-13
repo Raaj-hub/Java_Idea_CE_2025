@@ -73,6 +73,20 @@ public class Dup_elements {
 
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 
+        for (Integer i : n)
+        {
+            if(!map.containsKey(i))
+            {
+                map.put(i, 1);
+            }
+            else
+            {
+                map.put(i, map.get(i)+1);
+            }
+
+        }
+        System.out.println("iiiii ->"+map);
+
         for (int i = 0; i <= n.length - 1; i++) {
             if (!map.containsKey(n[i])) {
                 map.put(n[i], 1);

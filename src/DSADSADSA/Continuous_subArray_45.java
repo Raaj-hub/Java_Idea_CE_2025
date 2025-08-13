@@ -44,7 +44,7 @@ public class Continuous_subArray_45
             for (int i = start; i <= end; i++)
             {
                 System.out.print(arr[i]);
-                if (i < end) System.out.print(", ");
+               if (i < end) System.out.print(", ");
             }
             System.out.println("]");
             System.out.println("Indices: " + start + " to " + end);
@@ -53,13 +53,13 @@ public class Continuous_subArray_45
         public static void main(String[] args)
         {
              int[] arr = {12, 5, 31, 9, 21, 8};
-            //int arr[] = {-1,0,1,2,-1,-4};
-            int target = 17;
+             //int arr[] = {-1,0,1,2,-1,-4};
+            int target = 45;
 
             System.out.println("Array: " + Arrays.toString(arr));
             System.out.println("Target sum: " + target);
 
             int[] result = findSubarrayWithSum(arr, target);
-            printSubarray(arr, result[0], result[1]);
+                printSubarray(arr, result[0], result[1]);
         }
 }

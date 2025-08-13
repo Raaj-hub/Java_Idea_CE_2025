@@ -24,7 +24,7 @@ public class Second_most_repeated {
         }
         }
         System.out.println(map);
-        //map.forEach((key, value) -> System.out.println(key + ": " + value));
+        map.forEach((key, value) -> System.out.println(key + ": " + value));
 
         int first = 0, second = 0;
         Character firstChar = null,secondChar = null;

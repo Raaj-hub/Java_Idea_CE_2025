@@ -1,5 +1,6 @@
 package interviewQ;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Too_Hot_to_Hoot {
@@ -11,12 +12,12 @@ public class Too_Hot_to_Hoot {
         System.out.println(isPalindrome(str) ? "Palindrome" : "Not PALINDROME");
     }
 
-    private static boolean isPalindrome(String str) {
+    public static boolean isPalindrome(String str) {
         int i = 0, j = str.length() - 1;
         while (i < j) {
-            if (!Character.isDigit(str.charAt(i))) {
+            if (!Character.isLetterOrDigit(str.charAt(i))) {
                 i++;
-            } else if (!Character.isDigit(str.charAt(j))) {
+            } else if (!Character.isLetterOrDigit(str.charAt(j))) {
                 j--;
             } else if (Character.toLowerCase(str.charAt(i)) == Character.toLowerCase(str.charAt(j))) {
                 i++;
@@ -26,4 +27,6 @@ public class Too_Hot_to_Hoot {
         }
         return true;
     }
+
 }
+

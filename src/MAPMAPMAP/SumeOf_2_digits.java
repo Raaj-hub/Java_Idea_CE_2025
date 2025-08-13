@@ -34,7 +34,7 @@ public class SumeOf_2_digits {
                 map.put(elm[i], i);
             }
         }
-        return null;
+        return new int[0];
     }
 }
 

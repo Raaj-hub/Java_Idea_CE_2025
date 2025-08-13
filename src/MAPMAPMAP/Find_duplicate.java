@@ -24,12 +24,12 @@ public class Find_duplicate {
                 map.put(c[i], map.get(c[i]) + 1);
             }
         }
-        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-            // System.out.println(entry.getKey()+" "+entry.getValue());
-            if (entry.getValue() > 1) {
-                System.out.println("All duplicate chars in a string:" + (entry.getKey() + " " + entry.getValue()));
-            }
-        }
+//        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+//            // System.out.println(entry.getKey()+" "+entry.getValue());
+//            if (entry.getValue() > 1) {
+//                System.out.println("All duplicate chars in a string:" + (entry.getKey() + " " + entry.getValue()));
+//            }
+//        }
 
         for (char ch : c) {
             if (map.get(ch) > 1) {
