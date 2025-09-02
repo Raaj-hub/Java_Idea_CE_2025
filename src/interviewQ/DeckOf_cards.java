@@ -8,7 +8,7 @@ public class DeckOf_cards {
     public static void main(String[] args) {
         List<String> deck= creatDeck();
         Collections.shuffle(deck);
-        for (int i=0; i<=13; i++)
+        for (int i=0; i<=10; i++)
         {
             System.out.println(deck.get(i));
         }

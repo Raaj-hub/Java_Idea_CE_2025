@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class MatrixZero {
     public static void setZeroes(int[][] matrix) {
-        int n = matrix.length;
-        int m = matrix[0].length;
+        int n = matrix.length;//3
+        int m = matrix[0].length;//4
         System.out.println(n +" : "+m);
 
         boolean[] rows = new boolean[n];
