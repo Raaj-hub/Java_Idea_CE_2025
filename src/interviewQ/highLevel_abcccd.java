@@ -9,7 +9,7 @@ public class highLevel_abcccd
         String s = "ab&c-cd"; //ab&c-cd
         char a[] = s.toCharArray();
 
-        char c[] =new char[s.length()];
+       // char c[] =new char[s.length()];
 
         int i=0,j=s.length()-1;
 

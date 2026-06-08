@@ -11,25 +11,25 @@ import java.util.Set;
 public class array_2_arrayList {
     public static void main(String[] args) {
 
-        int[] arr = {2, 4, 6, 4, 1, 2, 5};
+        int[] arr = {2, 5, 4, 6, 4, 1, 2, 5};
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Int array: "+Arrays.toString(arr));
 
         String str[] = {"raj", "amz", "raj", "pfc"};
 
-        System.out.println(Arrays.toString(str));
+        System.out.println("Str array: "+Arrays.toString(str));
 
         List<String> li = Arrays.asList(str);
-        // li.add("rajesh");  // java.lang.UnsupportedOperationException
+         //li.add("rajesh");  // java.lang.UnsupportedOperationException
 
-        System.out.println(li);
+        System.out.println("LIST: "+li);
 
         Set<String> set = new HashSet<String>();
 
         for (String s : li) {
             set.add(s);
         }
-        System.out.println(set);
+        System.out.println("Removed dup: "+set);
 
         List<int[]> list = Arrays.asList(arr);
 
@@ -38,7 +38,7 @@ public class array_2_arrayList {
         }
 
         Set<Integer> sett = new HashSet<Integer>();
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i <= arr.length - 1; i++) {
             sett.add(arr[i]);
         }
         System.out.println("set removal :" + sett);

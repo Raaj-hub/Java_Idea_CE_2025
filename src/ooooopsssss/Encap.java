@@ -24,7 +24,8 @@ public class Encap {
 
 
         Human_Encaps hum = new Human_Encaps();
-        hum.setModel("tata"); hum.setWheels(4);
+        hum.setModel("tata");
+        hum.setWheels(4);
         System.out.println(hum.getWheels() +" : "+ hum.getModel());
 
     }

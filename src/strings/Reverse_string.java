@@ -6,11 +6,11 @@ public class Reverse_string {
        // String ss = "book";
         String s ="mac book";
 
-//        for(int i=s.length()-1;i>=0; i--)
-//        {
-//            System.out.print(s.charAt(i));
-//        }
-//        System.out.println();
+        for(int i=s.length()-1;i>=0; i--)
+        {
+            System.out.print(s.charAt(i));
+        }
+        System.out.println();
 //
 //        char[] c = s.toCharArray();
 //

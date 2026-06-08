@@ -5,7 +5,6 @@ import java.io.*;
 public class Try_with_resources {
     public static void main(String[] args) throws IOException {
 
-
         try (BufferedReader br = new BufferedReader(
                 new FileReader("sample.txt"));
         PrintWriter pw = new PrintWriter("output.txt"))
@@ -15,7 +14,7 @@ public class Try_with_resources {
 
         }
         catch (Exception e) {
-            System.out.println(e.getLocalizedMessage());
+            System.out.println(e.toString());
         }
         finally {
             System.out.println("Finallyyy....!");

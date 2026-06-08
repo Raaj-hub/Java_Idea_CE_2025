@@ -20,10 +20,12 @@ public class Patternn {
 
         while (m.find())
         {
-            res+=Integer.parseInt(m.group());
-           // System.out.print(m.group());
+           // res+=Integer.parseInt(m.group());
+            System.out.print(m.group());
         }
         System.out.println(res);
+
+
 
     }
 }

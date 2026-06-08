@@ -11,7 +11,6 @@ public class FindRepeated {
         Set<Integer> repeated = new HashSet<>();
 
 
-
         for (Integer num : numbers)
         {
             if (seen.contains(num))

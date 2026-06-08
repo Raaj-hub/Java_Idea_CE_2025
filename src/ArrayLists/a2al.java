@@ -19,8 +19,6 @@ public class a2al {
 //        sli.add("rajesh");
 //        System.out.println(sli);
 
-
-
         List<int[]> intLi = Arrays.asList(arr);
        for(int[] i : intLi)
        {
@@ -63,12 +61,17 @@ public class a2al {
             System.out.println(Arrays.toString(cc));
         }
 
-        List<String> slist = Arrays.asList(str);
+        //List<String> slist = Arrays.asList(str);
+        List<String> slist = List.of(str);
         Set <String> s = new HashSet<String>();
         for(int i=0; i<=str.length-1; i++) {
             s.add(str[i]);
         }
         System.out.println("remove dup strings:-->"+s);
+
+        List<String> StrJava8 = Arrays.stream(str).collect(Collectors.toList()); // MUTABLE LIST
+        StrJava8.add("extraaa");
+        System.out.println(StrJava8);
 
         List<String> sli = Arrays.asList(str);
        // sli.add("extra");

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DeckOf_cards {
     public static void main(String[] args) {
-        List<String> deck= creatDeck();
+        List<String> deck= createDeck();
         Collections.shuffle(deck);
         for (int i=0; i<=10; i++)
         {
@@ -14,7 +14,7 @@ public class DeckOf_cards {
         }
     }
 
-    private static List<String> creatDeck()
+    private static List<String> createDeck()
     {
         String[] shapes = {"hearts", "diamonds","spades","clubs"};
         List<String> deck = new ArrayList<>();

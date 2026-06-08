@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 public class Dup_elements {
     public static void main(String[] args) {
         int[] n={2,6,4,2,4,9,0,};
-        char c[] = {'A', 'B', 'B', 'A', 'E'};
-        String str[] = {"raj", "amz", "raj", "pfc","amz"};
+        char[] c = {'A', 'B', 'B', 'A', 'E'};
+        String str[] = {"hsr","raj", "amz", "raj", "pfc","amz"};
 
         List<Integer> list = Arrays.stream(n).boxed().collect(Collectors.toList());
         System.out.println(list);
@@ -16,9 +16,8 @@ public class Dup_elements {
         System.out.println(set);
 
         Set<Integer> s= new HashSet<>();
-        for(int i=0 ;i<n.length; i++)
-        {
-            s.add(n[i]);
+        for (int j : n) {
+            s.add(j);
         }
         System.out.println(s);
         //s.forEach(k-> System.out.print("ext for loop:"+k+" "));
@@ -35,7 +34,7 @@ public class Dup_elements {
         System.out.println(sc);
     }
 
-    private static void dupStrings(String[] str) {
+    public static void dupStrings(String[] str) {
         Map<String, Integer> map ;
         map = new HashMap<>();
        for(String s : str)
