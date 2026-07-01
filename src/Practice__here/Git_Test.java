@@ -7,5 +7,7 @@ public class Git_Test {
 
         // adding thsi line to handle git fetch and pull cmds
         //System.out.println(a>b?a:b);
+
+        System.out.println("Merge at git hub");
     }
 }
