@@ -9,6 +9,6 @@ public class Git_Test {
         //System.out.println(a>b?a:b);
         System.out.println(" check merge conflicts");
 
-        // checking git pull direct - git hub end
+        //check git pull IDE end
     }
 }
