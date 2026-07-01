@@ -4,5 +4,8 @@ public class Git_Test {
     public static void main(String[] args) {
         int a=6, b=9;
         System.out.println(a>b?a:b);
+
+        // adding thsi line to handle git fetch and pull cmds
+        //System.out.println(a>b?a:b);
     }
 }
