@@ -8,5 +8,7 @@ public class Git_Test {
         // adding thsi line to handle git fetch and pull cmds
         //System.out.println(a>b?a:b);
         System.out.println(" check merge conflicts");
+
+        // checking git pull direct - git hub end
     }
 }
